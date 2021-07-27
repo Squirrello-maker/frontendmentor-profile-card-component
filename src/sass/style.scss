@@ -26,6 +26,79 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 6em;
+    }
+}
+.content
+{
+    height: 50vh;
+}
+.bg-top
+{
+    position: relative;
+    top: 500px;
+    left: -350px;
+    z-index: -5;
+    overflow: hidden;
+}
+.card
+{
+    background-color: #fff;
+    // width: 50%;
+    border-radius: 15px;
+    &__background
+    {
+
+        img
+        {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    }
+    &__body
+    {
+        position: relative;
+        .card__profile__picture
+        {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 6px solid #fff;
+            border-radius: 50%;
+        }
+    }
+    &__profile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+        .heading
+        {
+            display: inline;
+            font-size: 1.8rem;
+        }
+        .age
+        {
+            margin-left: .5em;
+            font-size: 1.8rem;
+        }
+        .location
+        {
+            font-size: 1.4rem;
+            padding-top: .7em;
+        }
+    }
+    &__title
+    {
+        margin-top: 4em;
+    }
+    &__stats
+    {
+        display: flex;
+        justify-content: space-around;
+        padding: 2.5em;
+        border-top: 1px solid $dark-gray;
     }
 }
 
